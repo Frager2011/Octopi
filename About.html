@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About us</title>
+    <link rel="stylesheet" href="1style.css">
+    <link rel = "icon" href ="https://forum.codergautam.dev/uploads/default/original/3X/6/1/6160d43609f2501089c34321f50245e950c0358c.png">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+   
+    <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Octopi team</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Octopi team</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="Octopi.html">HOME</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="About.html">About us</a></li>
+          
+          <li><a href="#">Announcements</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="About-us">
+    <h1 class="typed">About Us</h1>
+  </div>
+
+  <div class="Frager201">
+   <img src="https://forum.codergautam.dev/user_avatar/forum.codergautam.dev/octopi_frager201/120/16382_2.png" width="200" height="200">
+  </div>
+
+  <div class="Acol">
+    <img src="https://forum.codergautam.dev/user_avatar/forum.codergautam.dev/acol/120/15268_2.png" width="200" height="200">
+  </div>
+  
+  <div class="About">
+   <p>We are called Team Octopi we were the first ever team<br> and og team to be 
+    created, We Are in a game called <br> <a href="https://Swordbattle.io">Swordbattle.io</a> 
+    We have a lot of good players like Acol <br> The current Dominator of Swordbattle.io and Number 1 <br>
+    world wide. We have a lot of players we have artists <br> and very good players in general all players 
+    will be <br> found in <a href="#">Members</a>.
+   </p>
+  </div>
+
+  <div class="Rules">
+    <h1 class="Rules-head">Rules</h1>
+    <ul>
+    <li class="R1">No Account Sharing</li>
+    <li class="R2">Always be nice to other people</li>
+    <li class="R3">Team with Octopi Members only</li>
+
+    </ul>
+
+  </div>
+
+  <div class="Application1">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEbPf1jAfmBb1eviNjAGabyD0d9B2Bp3zNMKDJrf8GOunG4w/viewform?usp=sf_link"><p> Application fill out</p></a>
+  </div>
+
+  <div class="Profile-Acol">
+    <a href="https://forum.codergautam.dev/u/acol/summary">Acol's Forum Profile</a>
+  </div>
+
+  <div class="Profile-Frager201">
+    <a href="https://forum.codergautam.dev/u/octopi_frager201/summary">Frager's Forum Profile</a>
+  </div>
+  
+  <script>
+  // search-box open close js code
+  let navbar = document.querySelector(".navbar");
+  let searchBox = document.querySelector(".search-box .bx-search");
+  // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+  
+  searchBox.addEventListener("click", ()=>{
+    navbar.classList.toggle("showInput");
+    if(navbar.classList.contains("showInput")){
+      searchBox.classList.replace("bx-search" ,"bx-x");
+    }else {
+      searchBox.classList.replace("bx-x" ,"bx-search");
+    }
+  });
+  
+  // sidebar open close js code
+  let navLinks = document.querySelector(".nav-links");
+  let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+  let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+  menuOpenBtn.onclick = function() {
+  navLinks.style.left = "0";
+  }
+  menuCloseBtn.onclick = function() {
+  navLinks.style.left = "-100%";
+  }
+  
+  
+  // sidebar submenu open close js code
+  let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+  htmlcssArrow.onclick = function() {
+   navLinks.classList.toggle("show1");
+  }
+  let moreArrow = document.querySelector(".more-arrow");
+  moreArrow.onclick = function() {
+   navLinks.classList.toggle("show2");
+  }
+  let jsArrow = document.querySelector(".js-arrow");
+  jsArrow.onclick = function() {
+   navLinks.classList.toggle("show3");
+  }
+</script>
+  
+    
+  </body>
+  
+</html>
+
